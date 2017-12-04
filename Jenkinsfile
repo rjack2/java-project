@@ -39,6 +39,7 @@ pipeline {
         sh "wget http://ec2-54-210-127-142.compute-1.amazonaws.com/rectangles/all/rectangle_${env.BUILD_NUMBER}.jar"
         sh "java -jar rectangle_${env.BUILD_NUMBER}.jar 3 4"
       }
+    }
   }
   post {
     always {
